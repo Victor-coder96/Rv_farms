@@ -1,0 +1,42 @@
+.gallery-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+    gap: 10px; /* Adjust the gap between images as needed */
+  }
+  
+  .gallery img {
+    max-width: 100%; /* Ensure images don't exceed their container width */
+    height: auto;
+    transition: transform 0.3s ease; /* Add transition for smoother hover effect */
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05); /* Scale up the image on hover */
+  }
+  
+  .btn {
+    background: #212EA0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px; /* Adjust as needed */
+    cursor: pointer;
+  }
+
+  @media (max-width: 800px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+      gap: 20px; /* Adjust the gap between images as needed */
+    }
+  
+    .gallery img {
+      width: 100%; /* Adjust the width of the images to fit two per row */
+      margin-bottom: 0; /* Remove the margin-bottom */
+    }
+  }
+  

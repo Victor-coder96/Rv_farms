@@ -1,0 +1,24 @@
+.video-player {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 50%; /* Adjust the width as needed */
+    max-width: 900px; /* Ensure the video doesn't exceed a certain width */
+    max-height: 80%; /* Limit the height to a certain percentage of the viewport height */
+    background: rgba(0, 0, 0, 0.9); 
+    z-index: 100;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+} 
+
+.video-player video {
+    width: 50%; /* Ensure the video fills the container */
+    height: auto; /* Maintain aspect ratio */
+    border: 4px solid #fff ;
+}
+
+.video-player.hide {
+    display: none; 
+}
